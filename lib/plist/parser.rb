@@ -13,6 +13,8 @@
 #
 #   r = Plist::parse_xml( filename_or_xml )
 module Plist
+  Encoding.default_external = Encoding::UTF_8
+  Encoding.default_internal = Encoding::UTF_8
 # Note that I don't use these two elements much:
 #
 #  + Date elements are returned as DateTime objects.
